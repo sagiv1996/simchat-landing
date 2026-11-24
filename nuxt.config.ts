@@ -1,8 +1,19 @@
+const siteUrl = process.env.NUXT_PUBLIC_SITE_URL ?? 'https://simchat-landing.pages.dev'
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
 
-  modules: ['@nuxt/ui', '@nuxtjs/i18n', '@nuxt/image'],
+  modules: ['@nuxt/ui', '@nuxtjs/i18n', '@nuxt/image', '@nuxtjs/sitemap'],
+
+  site: {
+    url: siteUrl,
+    name: "Molly's Candle",
+  },
+
+  runtimeConfig: {
+    public: { siteUrl },
+  },
 
   css: ['~/assets/css/main.css'],
 
@@ -10,6 +21,7 @@ export default defineNuxtConfig({
     head: {
       link: [{ rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
       meta: [{ name: 'theme-color', content: '#b45f2a' }],
+      script: [{ innerHTML: 'document.documentElement.setAttribute("data-js","")', tagPosition: 'head' }],
     },
   },
 
@@ -26,6 +38,7 @@ export default defineNuxtConfig({
   },
 
   i18n: {
+    baseUrl: siteUrl,
     strategy: 'prefix_except_default',
     defaultLocale: 'he',
     detectBrowserLanguage: false,

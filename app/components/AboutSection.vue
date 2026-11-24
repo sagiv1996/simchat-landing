@@ -3,7 +3,7 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <section id="about" class="bg-muted py-20 sm:py-28">
+  <section id="about" class="overflow-hidden bg-muted py-20 sm:py-28">
     <UContainer class="grid items-center gap-12 lg:grid-cols-5 lg:gap-16">
       <div v-reveal class="relative mx-auto w-full max-w-sm lg:col-span-2">
         <NuxtImg

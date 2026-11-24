@@ -5,12 +5,21 @@ const { t, locale } = useI18n()
 const localePath = useLocalePath()
 const switchLocalePath = useSwitchLocalePath()
 
+const activeSection = useActiveSection()
+
 const otherLocale = computed(() => (locale.value === 'he' ? 'en' : 'he'))
 
-const sections = ['services', 'workshops', 'gallery', 'about', 'faq'] as const
+const switchLanguageTo = computed(() => {
+  const hash = activeSection.value ? `#${activeSection.value}` : ''
+  return `${switchLocalePath(otherLocale.value)}${hash}`
+})
 
 const items = computed<NavigationMenuItem[]>(() =>
-  sections.map(id => ({ label: t(`nav.${id}`), to: `${localePath('/')}#${id}` })),
+  navSections.map(id => ({
+    label: t(`nav.${id}`),
+    to: `${localePath('/')}#${id}`,
+    active: activeSection.value === id,
+  })),
 )
 </script>
 
@@ -37,7 +46,7 @@ const items = computed<NavigationMenuItem[]>(() =>
         class="hidden lg:inline-flex"
       />
       <UButton
-        :to="switchLocalePath(otherLocale)"
+        :to="switchLanguageTo"
         :aria-label="t('nav.switchLanguageLabel')"
         color="neutral"
         variant="ghost"

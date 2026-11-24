@@ -19,7 +19,8 @@
     "workshop": "Hi Simchat, I'd like to book a candle-making workshop.\nDate: \nNumber of participants: \nLocation: ",
     "custom": "Hi Simchat, I'd like to order a custom-designed candle",
     "events": "Hi Simchat, I'd love to hear about designer candles for an event",
-    "floatingLabel": "Message us on WhatsApp"
+    "floatingLabel": "Message us on WhatsApp",
+    "hanukkah": "Hi Simchat, I'd love to hear about candles and workshops for Hanukkah"
   },
   "hero": {
     "eyebrow": "A boutique studio for handmade candles",
@@ -157,5 +158,19 @@
   },
   "theme": {
     "toggle": "Toggle color mode"
+  },
+  "hanukkah": {
+    "banner": "Hanukkah is coming! Designer candles as gifts and Hanukkah workshops for groups and families",
+    "bannerAction": "Learn more",
+    "eyebrow": "Hanukkah special",
+    "title": "A festival of light, a gift with a scent",
+    "text": "Looking for an original gift for family, your team or teachers? Handmade candles in a festive design. You can also turn your Hanukkah party into a creative workshop where everyone takes home a candle they made.",
+    "points": {
+      "gifts": "Festive designer candles as gifts",
+      "workshop": "Hanukkah workshops for families and groups",
+      "travel": "We come to you with everything needed"
+    },
+    "cta": "Order for Hanukkah",
+    "deadline": "Hanukkah starts December 4. Book early"
   }
 }

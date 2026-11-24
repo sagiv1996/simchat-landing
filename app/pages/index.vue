@@ -1,13 +1,19 @@
 <script setup lang="ts">
 const { t, locale } = useI18n()
+const { siteUrl } = useRuntimeConfig().public
+const ogImage = `${siteUrl}/og.jpg`
+const showHanukkah = isSeasonActive(hanukkah)
+
+useSectionTracking(trackedSections)
 
 useSeoMeta({
   title: () => t('meta.title'),
   description: () => t('meta.description'),
   ogTitle: () => t('meta.title'),
   ogDescription: () => t('meta.description'),
+  ogSiteName: business.name,
   ogType: 'website',
-  ogImage: '/og.jpg',
+  ogImage,
   ogImageWidth: 1200,
   ogImageHeight: 630,
   ogLocale: () => (locale.value === 'he' ? 'he_IL' : 'en_US'),
@@ -24,7 +30,8 @@ useHead({
       'name': business.name,
       'founder': business.owner,
       'telephone': business.phoneE164,
-      'image': '/og.jpg',
+      'url': siteUrl,
+      'image': ogImage,
       'sameAs': [business.instagram, business.facebook],
     }),
   }],
@@ -34,6 +41,7 @@ useHead({
 <template>
   <div>
     <HeroSection />
+    <HanukkahSection v-if="showHanukkah" />
     <ServicesSection />
     <WorkshopsSection />
     <GallerySection />

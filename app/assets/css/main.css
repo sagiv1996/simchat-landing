@@ -48,15 +48,17 @@ html {
   scroll-margin-top: 5rem;
 }
 
-.reveal {
+/* Hidden only once JS has marked the page, so content stays visible without JS. */
+html[data-js] [data-reveal] {
   opacity: 0;
   transform: translateY(24px);
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
-.reveal.is-visible {
+html[data-js] [data-reveal][data-revealed] {
   opacity: 1;
   transform: none;
+  transition-delay: var(--reveal-delay, 0ms);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -64,7 +66,7 @@ html {
     scroll-behavior: auto;
   }
 
-  .reveal {
+  html[data-js] [data-reveal] {
     opacity: 1;
     transform: none;
     transition: none;
