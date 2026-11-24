@@ -2,7 +2,7 @@ const siteUrl = process.env.NUXT_PUBLIC_SITE_URL ?? 'https://simchat-landing.pag
 
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
-  devtools: { enabled: true },
+  devtools: { enabled: false },
 
   modules: ['@nuxt/ui', '@nuxtjs/i18n', '@nuxt/image', '@nuxtjs/sitemap'],
 
