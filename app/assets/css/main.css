@@ -1,0 +1,72 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme static {
+  --font-sans: 'Heebo', system-ui, sans-serif;
+  --font-display: 'Frank Ruhl Libre', Georgia, serif;
+
+  --color-ember-50: #fdf7f1;
+  --color-ember-100: #f9eadb;
+  --color-ember-200: #f2d1b3;
+  --color-ember-300: #e9b182;
+  --color-ember-400: #de8a50;
+  --color-ember-500: #d26f31;
+  --color-ember-600: #b45f2a;
+  --color-ember-700: #934823;
+  --color-ember-800: #773b22;
+  --color-ember-900: #61321f;
+  --color-ember-950: #36180e;
+}
+
+:root {
+  --ui-bg: #fcf8f3;
+  --ui-bg-muted: #f6eee4;
+  --ui-bg-elevated: #f1e6d8;
+  --ui-bg-accented: #e9dccb;
+  --ui-text-highlighted: #2b1d14;
+  --ui-text: #4a3a2e;
+  --ui-text-muted: #7a6656;
+  --ui-border: #eadfd1;
+}
+
+.dark {
+  --ui-bg: #17110d;
+  --ui-bg-muted: #1f1712;
+  --ui-bg-elevated: #271d17;
+  --ui-bg-accented: #33271f;
+  --ui-text-highlighted: #fbf3ea;
+  --ui-text: #e6d8c9;
+  --ui-text-muted: #b19d8b;
+  --ui-border: #33271f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+[id] {
+  scroll-margin-top: 5rem;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

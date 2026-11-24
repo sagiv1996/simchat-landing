@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "title": "Molly's Candle – Handmade Designer Candles & Candle-Making Workshops",
+    "description": "A boutique studio for handmade scented candles by Simchat Dahan. Custom candles, candles for events, and candle-making workshops for all ages. We come to you with everything you need."
+  },
+  "nav": {
+    "services": "What we do",
+    "workshops": "Workshops",
+    "gallery": "Gallery",
+    "about": "About",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "switchLanguage": "עברית",
+    "switchLanguageLabel": "עבור לעברית",
+    "home": "Home"
+  },
+  "whatsapp": {
+    "general": "Hi Simchat, I found you through your website and would love to hear more",
+    "workshop": "Hi Simchat, I'd like to book a candle-making workshop.\nDate: \nNumber of participants: \nLocation: ",
+    "custom": "Hi Simchat, I'd like to order a custom-designed candle",
+    "events": "Hi Simchat, I'd love to hear about designer candles for an event",
+    "floatingLabel": "Message us on WhatsApp"
+  },
+  "hero": {
+    "eyebrow": "A boutique studio for handmade candles",
+    "title": "Candles that tell a story,",
+    "titleAccent": "workshops you'll remember",
+    "subtitle": "Custom scented candles and hands-on creative workshops for all ages. We come to you with all the tools, materials and inspiration.",
+    "ctaPrimary": "Book a workshop on WhatsApp",
+    "ctaSecondary": "Custom candles",
+    "badges": {
+      "travel": "We come to you",
+      "ages": "For all ages",
+      "handmade": "Handmade, quality materials"
+    },
+    "imageAlt": "A coconut-shell candle decorated with starfish and blue stones"
+  },
+  "services": {
+    "eyebrow": "What we do",
+    "title": "Three ways to bring in a little light",
+    "workshops": {
+      "title": "Candle-making workshops",
+      "text": "A creative experience for groups, families and events. Everyone makes their own candle and takes home a meaningful keepsake.",
+      "cta": "Book a workshop",
+      "badge": "Most popular"
+    },
+    "custom": {
+      "title": "Custom-designed candles",
+      "text": "Choose the design, scent and size. A perfect gift, a treat for your home, or something that's all yours.",
+      "cta": "Order a candle"
+    },
+    "events": {
+      "title": "Candles for events",
+      "text": "Scented designer candles for weddings, bar and bat mitzvahs, holidays and celebrations. An original touch your guests will remember.",
+      "cta": "Ask about events"
+    }
+  },
+  "workshops": {
+    "eyebrow": "Our workshops",
+    "title": "Everyone leaves with a candle they made themselves",
+    "text": "Pick shells, stones, dried flowers and a scent, then pour a one-of-a-kind candle in a coconut shell. Great for small and large groups, kids and adults, and tailored to your occasion.",
+    "occasionsTitle": "Perfect for",
+    "occasions": {
+      "bachelorette": "Bachelorette parties",
+      "birthday": "Birthdays",
+      "team": "Team-building days",
+      "family": "Family activities",
+      "mitzvah": "Bar and bat mitzvahs",
+      "groups": "Youth groups and classes"
+    },
+    "stepsTitle": "How it works",
+    "steps": {
+      "one": {
+        "title": "Send a message",
+        "text": "Tell us about your group, the date and the place."
+      },
+      "two": {
+        "title": "We tailor the experience",
+        "text": "Together we choose the style, colors and scents for your occasion."
+      },
+      "three": {
+        "title": "We come to you",
+        "text": "With all the tools and materials. You just create and enjoy."
+      }
+    },
+    "cta": "Check available dates",
+    "videoLabel": "Moments from a workshop"
+  },
+  "gallery": {
+    "eyebrow": "Gallery",
+    "title": "From the studio and our workshops",
+    "subtitle": "A little inspiration from candles made in our studio and workshops",
+    "open": "Enlarge image",
+    "close": "Close",
+    "items": {
+      "candleStarfish": "Coconut candle with starfish and blue stones",
+      "workshopGirls": "Participants designing candles at a workshop",
+      "candleRedFlowers": "Coconut candle with dried red flowers and starfish",
+      "workshopGroup": "A group showing the candles they made",
+      "handsRose": "Adding a dried rose to a handmade candle",
+      "candlesCollection": "A collection of designer coconut candles",
+      "workshopTable": "The workshop table with flowers, shells and stones to choose from",
+      "happyGuest": "A participant holding the candle she made",
+      "handsShells": "Decorating a candle with shells and flowers"
+    }
+  },
+  "about": {
+    "eyebrow": "Nice to meet you",
+    "title": "Simchat Dahan",
+    "subtitle": "Founder of Molly's Candle",
+    "p1": "Molly's Candle is a cozy, intimate home boutique studio for designing and making handmade candles.",
+    "p2": "You'll find scented candles in a range of colors, designs and scents: poured candles, candles in vessels and custom-designed candles, for every style, every taste and every purpose.",
+    "p3": "For workshops we come right to you, with a smile, quality materials and plenty of inspiration.",
+    "quote": "Not just candles, but a whole experience of scent, design and calm.",
+    "imageAlt": "Hands decorating a coconut-shell candle with shells"
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Everything you wanted to know",
+    "items": {
+      "where": {
+        "q": "Where do the workshops take place?",
+        "a": "We come to you: your home, office, event venue or anywhere you choose, with all the tools and materials."
+      },
+      "ages": {
+        "q": "What ages are the workshops for?",
+        "a": "All ages, from kids to adults. We adapt the content and materials to your group."
+      },
+      "size": {
+        "q": "How many people can join?",
+        "a": "We run workshops for individuals and for groups, small and large. Tell us how many you'll be and we'll plan accordingly."
+      },
+      "events": {
+        "q": "Can I order candles for an event or as guest favors?",
+        "a": "Absolutely. We design custom candles for weddings, bar and bat mitzvahs, holidays and events, in the colors, scents and design you choose."
+      },
+      "price": {
+        "q": "How much does it cost?",
+        "a": "It depends on the type of workshop, the number of participants and the design. Send us a WhatsApp message and we'll get back to you with a tailored quote."
+      },
+      "notice": {
+        "q": "How far in advance should I book?",
+        "a": "As early as you can, especially before holidays and during event season."
+      }
+    }
+  },
+  "cta": {
+    "title": "Want to light up a special moment?",
+    "text": "Send us a message and we'll get back to you with all the details, no commitment.",
+    "button": "Message us on WhatsApp",
+    "call": "or call"
+  },
+  "footer": {
+    "tagline": "Handmade designer candles, workshops and events",
+    "rights": "All rights reserved",
+    "followUs": "Follow us"
+  },
+  "theme": {
+    "toggle": "Toggle color mode"
+  }
+}
