@@ -1,4 +1,4 @@
-import { localeRedirectScript } from './app/utils/localePreference'
+import { DEFAULT_LOCALE, LOCALES, localeRedirectScript } from './app/utils/localePreference'
 
 const siteUrl = process.env.NUXT_PUBLIC_SITE_URL ?? 'https://simchat-landing.pages.dev'
 
@@ -45,12 +45,9 @@ export default defineNuxtConfig({
   i18n: {
     baseUrl: siteUrl,
     strategy: 'prefix_except_default',
-    defaultLocale: 'he',
+    defaultLocale: DEFAULT_LOCALE,
     detectBrowserLanguage: false,
-    locales: [
-      { code: 'he', language: 'he-IL', dir: 'rtl', name: 'עברית', file: 'he.json' },
-      { code: 'en', language: 'en-US', dir: 'ltr', name: 'English', file: 'en.json' },
-    ],
+    locales: LOCALES.map(locale => ({ ...locale })),
   },
 
   // Pinned so building on Cloudflare doesn't auto-select a server preset and the paid /cdn-cgi image resizer.

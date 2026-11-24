@@ -1,0 +1,193 @@
+{
+  "meta": {
+    "title": "Molly's Candle – Bougies artisanales et ateliers de création de bougies",
+    "description": "Un studio boutique de bougies parfumées faites main par Simchat Dahan. Bougies personnalisées, bougies pour événements et ateliers de création pour tous les âges. Nous venons chez vous avec tout le nécessaire."
+  },
+  "nav": {
+    "services": "Nos services",
+    "workshops": "Ateliers",
+    "gallery": "Galerie",
+    "about": "À propos",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "language": "Langue",
+    "home": "Accueil"
+  },
+  "whatsapp": {
+    "general": "Hi Simchat, I found you through your website and would love to hear more",
+    "workshop": "Hi Simchat, I'd like to book a candle-making workshop.\nDate: \nNumber of participants: \nLocation: ",
+    "custom": "Hi Simchat, I'd like to order a custom-designed candle",
+    "events": "Hi Simchat, I'd love to hear about designer candles for an event",
+    "floatingLabel": "Écrivez-nous sur WhatsApp",
+    "hanukkah": "Hi Simchat, I'd love to hear about candles and workshops for Hanukkah"
+  },
+  "hero": {
+    "eyebrow": "Un studio boutique de bougies faites main",
+    "title": "Des bougies qui racontent une histoire,",
+    "subtitle": "Des bougies parfumées personnalisées et des ateliers créatifs pour tous les âges. Nous venons chez vous avec les outils, les matériaux et l'inspiration.",
+    "ctaPrimary": "Réserver un atelier sur WhatsApp",
+    "ctaSecondary": "Bougies personnalisées",
+    "badges": {
+      "travel": "Nous venons chez vous",
+      "ages": "Pour tous les âges",
+      "handmade": "Fait main, matériaux de qualité"
+    },
+    "imageAlt": "Une bougie dans une coque de noix de coco décorée d'étoiles de mer et de pierres bleues",
+    "rotating": {
+      "one": "des ateliers inoubliables",
+      "two": "des cadeaux qui touchent le cœur",
+      "three": "des événements qui brillent",
+      "four": "des moments de calme"
+    }
+  },
+  "services": {
+    "eyebrow": "Nos services",
+    "title": "Trois façons d'apporter un peu de lumière",
+    "workshops": {
+      "title": "Ateliers de création de bougies",
+      "text": "Une expérience créative pour les groupes, les familles et les événements. Chacun crée sa propre bougie et repart avec un souvenir unique.",
+      "cta": "Réserver un atelier",
+      "badge": "Le plus demandé"
+    },
+    "custom": {
+      "title": "Bougies personnalisées",
+      "text": "Choisissez le design, le parfum et la taille. Un cadeau parfait, une douceur pour la maison ou une création rien qu'à vous.",
+      "cta": "Commander une bougie"
+    },
+    "events": {
+      "title": "Bougies pour événements",
+      "text": "Des bougies parfumées et décoratives pour les mariages, bar et bat mitsvah, fêtes et célébrations. Une touche originale dont vos invités se souviendront.",
+      "cta": "Se renseigner"
+    }
+  },
+  "workshops": {
+    "eyebrow": "Nos ateliers",
+    "title": "Chacun repart avec une bougie qu'il a créée lui-même",
+    "text": "Choisissez des coquillages, des pierres, des fleurs séchées et un parfum, puis coulez une bougie unique dans une coque de noix de coco. Idéal pour les petits et grands groupes, enfants comme adultes, et adapté à votre occasion.",
+    "occasionsTitle": "Parfait pour",
+    "occasions": {
+      "bachelorette": "Enterrements de vie de jeune fille",
+      "birthday": "Anniversaires",
+      "team": "Journées de team building",
+      "family": "Activités en famille",
+      "mitzvah": "Bar et bat mitsvah",
+      "groups": "Groupes de jeunes et classes"
+    },
+    "stepsTitle": "Comment ça marche",
+    "steps": {
+      "one": {
+        "title": "Envoyez un message",
+        "text": "Parlez-nous de votre groupe, de la date et du lieu."
+      },
+      "two": {
+        "title": "Nous adaptons l'expérience",
+        "text": "Ensemble, nous choisissons le style, les couleurs et les parfums."
+      },
+      "three": {
+        "title": "Nous venons chez vous",
+        "text": "Avec tous les outils et matériaux. Vous n'avez qu'à créer et profiter."
+      }
+    },
+    "cta": "Vérifier les disponibilités",
+    "videoLabel": "Moments d'un atelier"
+  },
+  "gallery": {
+    "eyebrow": "Galerie",
+    "title": "Du studio et de nos ateliers",
+    "subtitle": "Un peu d'inspiration : des bougies créées au studio et lors de nos ateliers",
+    "open": "Agrandir l'image",
+    "items": {
+      "candleStarfish": "Bougie en noix de coco avec étoiles de mer et pierres bleues",
+      "workshopGirls": "Des participantes décorent leurs bougies pendant un atelier",
+      "candleRedFlowers": "Bougie en noix de coco avec fleurs rouges séchées et étoiles de mer",
+      "workshopGroup": "Un groupe montre les bougies qu'il a créées",
+      "handsRose": "Ajout d'une rose séchée à une bougie faite main",
+      "candlesCollection": "Une collection de bougies en noix de coco",
+      "workshopTable": "La table de l'atelier avec fleurs, coquillages et pierres au choix",
+      "happyGuest": "Une participante tient la bougie qu'elle a créée",
+      "handsShells": "Décoration d'une bougie avec coquillages et fleurs"
+    },
+    "viewAll": "Voir les {count} photos",
+    "lightbox": {
+      "close": "Fermer",
+      "previous": "Précédente",
+      "next": "Suivante",
+      "zoom": "Zoomer",
+      "error": "L'image n'a pas pu être chargée"
+    }
+  },
+  "about": {
+    "eyebrow": "Enchantée",
+    "title": "Simchat Dahan",
+    "subtitle": "Fondatrice de Molly's Candle",
+    "p1": "Molly's Candle est un studio boutique chaleureux et intime, installé à la maison, dédié à la création de bougies faites main.",
+    "p2": "Vous y trouverez des bougies parfumées dans une grande variété de couleurs, de designs et de parfums : bougies coulées, bougies en contenant et bougies personnalisées, pour chaque style, chaque goût et chaque occasion.",
+    "p3": "Pour les ateliers, nous venons jusqu'à vous, avec le sourire, des matériaux de qualité et beaucoup d'inspiration.",
+    "quote": "Pas seulement des bougies, mais une expérience complète de parfum, de design et de sérénité.",
+    "imageAlt": "Des mains décorent une bougie en noix de coco avec des coquillages"
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Tout ce que vous vouliez savoir",
+    "items": {
+      "where": {
+        "q": "Où se déroulent les ateliers ?",
+        "a": "Nous venons chez vous : à la maison, au bureau, dans une salle de réception ou à l'endroit de votre choix, avec tout le matériel."
+      },
+      "ages": {
+        "q": "À quels âges s'adressent les ateliers ?",
+        "a": "À tous les âges, des enfants aux adultes. Nous adaptons le contenu et les matériaux à votre groupe."
+      },
+      "size": {
+        "q": "Combien de personnes peuvent participer ?",
+        "a": "Nous proposons des ateliers pour les particuliers et pour les groupes, petits et grands. Dites-nous combien vous serez et nous organiserons l'atelier en conséquence."
+      },
+      "events": {
+        "q": "Puis-je commander des bougies pour un événement ou comme cadeaux pour les invités ?",
+        "a": "Bien sûr. Nous créons des bougies personnalisées pour les mariages, bar et bat mitsvah, fêtes et événements, dans les couleurs, parfums et designs de votre choix."
+      },
+      "price": {
+        "q": "Combien ça coûte ?",
+        "a": "Cela dépend du type d'atelier, du nombre de participants et du design. Envoyez-nous un message sur WhatsApp et nous vous ferons une offre sur mesure."
+      },
+      "notice": {
+        "q": "Combien de temps à l'avance faut-il réserver ?",
+        "a": "Le plus tôt possible, surtout avant les fêtes et pendant la saison des événements."
+      }
+    }
+  },
+  "cta": {
+    "title": "Envie d'illuminer un moment spécial ?",
+    "text": "Envoyez-nous un message et nous vous répondrons avec tous les détails, sans engagement.",
+    "button": "Écrivez-nous sur WhatsApp",
+    "call": "ou appelez le"
+  },
+  "footer": {
+    "tagline": "Bougies artisanales, ateliers et événements",
+    "rights": "Tous droits réservés",
+    "followUs": "Suivez-nous"
+  },
+  "theme": {
+    "toggle": "Changer le mode d'affichage"
+  },
+  "hanukkah": {
+    "banner": "Hanoukka approche ! Bougies cadeaux et ateliers",
+    "bannerAction": "En savoir plus",
+    "eyebrow": "Spécial Hanoukka",
+    "title": "Une fête de lumière, un cadeau parfumé",
+    "text": "Vous cherchez un cadeau original pour la famille, votre équipe ou les enseignants ? Des bougies faites main au design festif. Vous pouvez aussi transformer votre fête de Hanoukka en atelier créatif où chacun repart avec sa propre bougie.",
+    "points": {
+      "gifts": "Bougies festives à offrir",
+      "workshop": "Ateliers de Hanoukka pour familles et groupes",
+      "travel": "Nous venons chez vous avec tout le nécessaire"
+    },
+    "cta": "Commander pour Hanoukka",
+    "deadline": "Hanoukka commence le 4 décembre. Réservez tôt"
+  },
+  "nudge": {
+    "title": "Une question ?",
+    "text": "Simchat est disponible sur WhatsApp pour toute question sur les ateliers, les bougies et les événements.",
+    "cta": "Envoyer un message",
+    "close": "Fermer"
+  }
+}

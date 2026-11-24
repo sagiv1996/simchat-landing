@@ -1,14 +1,10 @@
 <script setup lang="ts">
 import type { NavigationMenuItem } from '@nuxt/ui'
 
-const { t, locale } = useI18n()
+const { t } = useI18n()
 const { business, whatsappLink } = useBusiness()
 
 const activeSection = useActiveSection()
-
-const otherLocale = computed(() => (locale.value === 'he' ? 'en' : 'he'))
-
-const switchLanguageTo = computed(() => (activeSection.value ? `/#${activeSection.value}` : '/'))
 
 const items = computed<NavigationMenuItem[]>(() =>
   navSections.map(id => ({
@@ -41,16 +37,7 @@ const items = computed<NavigationMenuItem[]>(() =>
         variant="ghost"
         class="hidden lg:inline-flex"
       />
-      <UButton
-        :to="switchLanguageTo"
-        :locale="otherLocale"
-        :aria-label="t('nav.switchLanguageLabel')"
-        color="neutral"
-        variant="ghost"
-        icon="i-lucide-languages"
-        :label="t('nav.switchLanguage')"
-        @click="rememberLocale(otherLocale)"
-      />
+      <LanguageSwitcher />
       <UColorModeButton :aria-label="t('theme.toggle')" />
       <UButton
         :to="whatsappLink(t('whatsapp.general'))"

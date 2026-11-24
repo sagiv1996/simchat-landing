@@ -1,10 +1,11 @@
 <script setup lang="ts">
-import { en, he } from '@nuxt/ui/locale'
+import { en, es, fr, he } from '@nuxt/ui/locale'
 
 const { t, locale } = useI18n()
 const i18nHead = useLocaleHead()
 
-const uiLocale = computed(() => (locale.value === 'he' ? he : en))
+const uiLocales = { he, en, fr, es }
+const uiLocale = computed(() => uiLocales[locale.value as LocaleCode] ?? he)
 const showHanukkah = isSeasonActive(hanukkah)
 
 useHead(() => ({

@@ -1,0 +1,193 @@
+{
+  "meta": {
+    "title": "Molly's Candle – Velas artesanales y talleres de velas",
+    "description": "Un estudio boutique de velas aromáticas hechas a mano por Simchat Dahan. Velas personalizadas, velas para eventos y talleres de velas para todas las edades. Vamos a donde estés con todo lo necesario."
+  },
+  "nav": {
+    "services": "Qué hacemos",
+    "workshops": "Talleres",
+    "gallery": "Galería",
+    "about": "Sobre nosotros",
+    "faq": "Preguntas",
+    "contact": "Contacto",
+    "language": "Idioma",
+    "home": "Inicio"
+  },
+  "whatsapp": {
+    "general": "Hi Simchat, I found you through your website and would love to hear more",
+    "workshop": "Hi Simchat, I'd like to book a candle-making workshop.\nDate: \nNumber of participants: \nLocation: ",
+    "custom": "Hi Simchat, I'd like to order a custom-designed candle",
+    "events": "Hi Simchat, I'd love to hear about designer candles for an event",
+    "floatingLabel": "Escríbenos por WhatsApp",
+    "hanukkah": "Hi Simchat, I'd love to hear about candles and workshops for Hanukkah"
+  },
+  "hero": {
+    "eyebrow": "Un estudio boutique de velas hechas a mano",
+    "title": "Velas que cuentan una historia,",
+    "subtitle": "Velas aromáticas personalizadas y talleres creativos para todas las edades. Vamos a donde estés con todas las herramientas, los materiales y la inspiración.",
+    "ctaPrimary": "Reservar un taller por WhatsApp",
+    "ctaSecondary": "Velas personalizadas",
+    "badges": {
+      "travel": "Vamos a donde estés",
+      "ages": "Para todas las edades",
+      "handmade": "Hecho a mano, materiales de calidad"
+    },
+    "imageAlt": "Una vela en cáscara de coco decorada con estrellas de mar y piedras azules",
+    "rotating": {
+      "one": "talleres que se recuerdan",
+      "two": "regalos que emocionan",
+      "three": "eventos que brillan",
+      "four": "momentos de calma"
+    }
+  },
+  "services": {
+    "eyebrow": "Qué hacemos",
+    "title": "Tres formas de traer un poco de luz",
+    "workshops": {
+      "title": "Talleres de velas",
+      "text": "Una experiencia creativa para grupos, familias y eventos. Cada uno crea su propia vela y se lleva a casa un recuerdo especial.",
+      "cta": "Reservar un taller",
+      "badge": "El más pedido"
+    },
+    "custom": {
+      "title": "Velas personalizadas",
+      "text": "Elige el diseño, el aroma y el tamaño. Un regalo perfecto, un capricho para tu hogar o algo solo tuyo.",
+      "cta": "Pedir una vela"
+    },
+    "events": {
+      "title": "Velas para eventos",
+      "text": "Velas aromáticas de diseño para bodas, bar y bat mitzvá, fiestas y celebraciones. Un toque original que tus invitados recordarán.",
+      "cta": "Consultar por eventos"
+    }
+  },
+  "workshops": {
+    "eyebrow": "Nuestros talleres",
+    "title": "Cada uno se lleva una vela hecha por sí mismo",
+    "text": "Elige conchas, piedras, flores secas y un aroma, y vierte una vela única en una cáscara de coco. Ideal para grupos pequeños y grandes, niños y adultos, y adaptado a tu ocasión.",
+    "occasionsTitle": "Perfecto para",
+    "occasions": {
+      "bachelorette": "Despedidas de soltera",
+      "birthday": "Cumpleaños",
+      "team": "Días de team building",
+      "family": "Actividades en familia",
+      "mitzvah": "Bar y bat mitzvá",
+      "groups": "Grupos juveniles y clases"
+    },
+    "stepsTitle": "Cómo funciona",
+    "steps": {
+      "one": {
+        "title": "Envía un mensaje",
+        "text": "Cuéntanos sobre tu grupo, la fecha y el lugar."
+      },
+      "two": {
+        "title": "Adaptamos la experiencia",
+        "text": "Juntos elegimos el estilo, los colores y los aromas para tu ocasión."
+      },
+      "three": {
+        "title": "Vamos a donde estés",
+        "text": "Con todas las herramientas y materiales. Tú solo creas y disfrutas."
+      }
+    },
+    "cta": "Consultar fechas disponibles",
+    "videoLabel": "Momentos de un taller"
+  },
+  "gallery": {
+    "eyebrow": "Galería",
+    "title": "Desde el estudio y nuestros talleres",
+    "subtitle": "Un poco de inspiración: velas creadas en el estudio y en nuestros talleres",
+    "open": "Ampliar imagen",
+    "items": {
+      "candleStarfish": "Vela de coco con estrellas de mar y piedras azules",
+      "workshopGirls": "Participantes decorando velas en un taller",
+      "candleRedFlowers": "Vela de coco con flores rojas secas y estrellas de mar",
+      "workshopGroup": "Un grupo muestra las velas que creó",
+      "handsRose": "Añadiendo una rosa seca a una vela hecha a mano",
+      "candlesCollection": "Una colección de velas de coco",
+      "workshopTable": "La mesa del taller con flores, conchas y piedras para elegir",
+      "happyGuest": "Una participante sostiene la vela que creó",
+      "handsShells": "Decorando una vela con conchas y flores"
+    },
+    "viewAll": "Ver las {count} fotos",
+    "lightbox": {
+      "close": "Cerrar",
+      "previous": "Anterior",
+      "next": "Siguiente",
+      "zoom": "Ampliar",
+      "error": "No se pudo cargar la imagen"
+    }
+  },
+  "about": {
+    "eyebrow": "Encantada",
+    "title": "Simchat Dahan",
+    "subtitle": "Fundadora de Molly's Candle",
+    "p1": "Molly's Candle es un estudio boutique en casa, íntimo y lleno de inspiración, dedicado a diseñar y crear velas hechas a mano.",
+    "p2": "Encontrarás velas aromáticas en una gran variedad de colores, diseños y aromas: velas vertidas, velas en recipientes y velas personalizadas, para cada estilo, cada gusto y cada ocasión.",
+    "p3": "Para los talleres vamos hasta donde estés, con una sonrisa, materiales de calidad y mucha inspiración.",
+    "quote": "No solo velas, sino una experiencia completa de aroma, diseño y calma.",
+    "imageAlt": "Manos decorando una vela en cáscara de coco con conchas"
+  },
+  "faq": {
+    "eyebrow": "Preguntas frecuentes",
+    "title": "Todo lo que querías saber",
+    "items": {
+      "where": {
+        "q": "¿Dónde se realizan los talleres?",
+        "a": "Vamos a donde estés: tu casa, tu oficina, un salón de eventos o el lugar que elijas, con todas las herramientas y materiales."
+      },
+      "ages": {
+        "q": "¿Para qué edades son los talleres?",
+        "a": "Para todas las edades, de niños a adultos. Adaptamos el contenido y los materiales a tu grupo."
+      },
+      "size": {
+        "q": "¿Cuántas personas pueden participar?",
+        "a": "Hacemos talleres individuales y para grupos, pequeños y grandes. Dinos cuántos serán y lo organizamos en consecuencia."
+      },
+      "events": {
+        "q": "¿Puedo encargar velas para un evento o como recuerdo para los invitados?",
+        "a": "Por supuesto. Diseñamos velas personalizadas para bodas, bar y bat mitzvá, fiestas y eventos, con los colores, aromas y diseño que elijas."
+      },
+      "price": {
+        "q": "¿Cuánto cuesta?",
+        "a": "Depende del tipo de taller, el número de participantes y el diseño. Escríbenos por WhatsApp y te enviaremos un presupuesto a medida."
+      },
+      "notice": {
+        "q": "¿Con cuánta antelación debo reservar?",
+        "a": "Lo antes posible, sobre todo antes de las fiestas y en temporada de eventos."
+      }
+    }
+  },
+  "cta": {
+    "title": "¿Quieres iluminar un momento especial?",
+    "text": "Escríbenos y te responderemos con todos los detalles, sin compromiso.",
+    "button": "Escríbenos por WhatsApp",
+    "call": "o llama al"
+  },
+  "footer": {
+    "tagline": "Velas artesanales, talleres y eventos",
+    "rights": "Todos los derechos reservados",
+    "followUs": "Síguenos"
+  },
+  "theme": {
+    "toggle": "Cambiar modo de color"
+  },
+  "hanukkah": {
+    "banner": "¡Se acerca Janucá! Velas de regalo y talleres",
+    "bannerAction": "Más información",
+    "eyebrow": "Especial Janucá",
+    "title": "Una fiesta de luz, un regalo con aroma",
+    "text": "¿Buscas un regalo original para la familia, tu equipo o los profesores? Velas hechas a mano con un diseño festivo. También puedes convertir tu fiesta de Janucá en un taller creativo donde cada uno se lleva la vela que hizo.",
+    "points": {
+      "gifts": "Velas festivas para regalar",
+      "workshop": "Talleres de Janucá para familias y grupos",
+      "travel": "Vamos a donde estés con todo lo necesario"
+    },
+    "cta": "Pedir para Janucá",
+    "deadline": "Janucá empieza el 4 de diciembre. Reserva con tiempo"
+  },
+  "nudge": {
+    "title": "¿Tienes alguna pregunta?",
+    "text": "Simchat está disponible por WhatsApp para cualquier pregunta sobre talleres, velas y eventos.",
+    "cta": "Enviar un mensaje",
+    "close": "Cerrar"
+  }
+}

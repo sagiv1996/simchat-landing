@@ -10,9 +10,8 @@
     "about": "About",
     "faq": "FAQ",
     "contact": "Contact",
-    "switchLanguage": "עברית",
-    "switchLanguageLabel": "עבור לעברית",
-    "home": "Home"
+    "home": "Home",
+    "language": "Language"
   },
   "whatsapp": {
     "general": "Hi Simchat, I found you through your website and would love to hear more",

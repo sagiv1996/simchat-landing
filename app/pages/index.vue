@@ -17,7 +17,7 @@ useSeoMeta({
   ogImage,
   ogImageWidth: 1200,
   ogImageHeight: 630,
-  ogLocale: () => (locale.value === 'he' ? 'he_IL' : 'en_US'),
+  ogLocale: () => (LOCALES.find(option => option.code === locale.value) ?? LOCALES[0]).language.replace('-', '_'),
   twitterCard: 'summary_large_image',
 })
 
