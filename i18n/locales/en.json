@@ -184,5 +184,11 @@
     },
     "cta": "Order for Hanukkah",
     "deadline": "Hanukkah starts December 4. Book early"
+  },
+  "nudge": {
+    "title": "Have a question?",
+    "text": "Simchat is available on WhatsApp for any question about workshops, candles and events.",
+    "cta": "Send a message",
+    "close": "Close"
   }
 }
