@@ -2,29 +2,24 @@
 import type { NavigationMenuItem } from '@nuxt/ui'
 
 const { t, locale } = useI18n()
-const localePath = useLocalePath()
-const switchLocalePath = useSwitchLocalePath()
 
 const activeSection = useActiveSection()
 
 const otherLocale = computed(() => (locale.value === 'he' ? 'en' : 'he'))
 
-const switchLanguageTo = computed(() => {
-  const hash = activeSection.value ? `#${activeSection.value}` : ''
-  return `${switchLocalePath(otherLocale.value)}${hash}`
-})
+const switchLanguageTo = computed(() => (activeSection.value ? `/#${activeSection.value}` : '/'))
 
 const items = computed<NavigationMenuItem[]>(() =>
   navSections.map(id => ({
     label: t(`nav.${id}`),
-    to: `${localePath('/')}#${id}`,
+    to: `/#${id}`,
     active: activeSection.value === id,
   })),
 )
 </script>
 
 <template>
-  <UHeader :to="localePath('/')" :ui="{ root: 'bg-default/80 backdrop-blur' }">
+  <UHeader to="/" :ui="{ root: 'bg-default/80 backdrop-blur' }">
     <template #title>
       <span class="font-display text-xl font-semibold tracking-tight text-highlighted">
         Molly's Candle
@@ -47,6 +42,7 @@ const items = computed<NavigationMenuItem[]>(() =>
       />
       <UButton
         :to="switchLanguageTo"
+        :locale="otherLocale"
         :aria-label="t('nav.switchLanguageLabel')"
         color="neutral"
         variant="ghost"
