@@ -95,6 +95,23 @@ html[data-js] [data-reveal][data-revealed] {
   75% { opacity: 0.95; scale: 1.02; }
 }
 
+.pswp__counter {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+.pswp__caption {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  padding: 1rem 1rem calc(1rem + env(safe-area-inset-bottom));
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgb(255 255 255 / 0.85);
+  background: linear-gradient(to top, rgb(0 0 0 / 0.6), transparent);
+  pointer-events: none;
+}
+
 @keyframes caret-blink {
   50% { opacity: 0; }
 }

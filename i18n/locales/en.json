@@ -108,7 +108,14 @@
       "happyGuest": "A participant holding the candle she made",
       "handsShells": "Decorating a candle with shells and flowers"
     },
-    "viewAll": "See all {count} photos"
+    "viewAll": "See all {count} photos",
+    "lightbox": {
+      "close": "Close",
+      "previous": "Previous",
+      "next": "Next",
+      "zoom": "Zoom",
+      "error": "The image could not be loaded"
+    }
   },
   "about": {
     "eyebrow": "Nice to meet you",

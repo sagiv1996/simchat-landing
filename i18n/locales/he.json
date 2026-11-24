@@ -108,7 +108,14 @@
       "happyGuest": "משתתפת מחזיקה את הנר שיצרה",
       "handsShells": "עיטור נר בצדפים ופרחים"
     },
-    "viewAll": "לכל {count} התמונות"
+    "viewAll": "לכל {count} התמונות",
+    "lightbox": {
+      "close": "סגירה",
+      "previous": "הקודמת",
+      "next": "הבאה",
+      "zoom": "הגדלה",
+      "error": "לא הצלחנו לטעון את התמונה"
+    }
   },
   "about": {
     "eyebrow": "נעים להכיר",

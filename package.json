@@ -15,6 +15,7 @@
     "@nuxtjs/i18n": "^10.6.0",
     "@nuxtjs/sitemap": "^9.2.0",
     "nuxt": "^4.6.4",
+    "photoswipe": "^5.4.4",
     "tailwindcss": "^4.3.5",
     "vue": "^3.5.45",
     "vue-router": "^5.4.0"
