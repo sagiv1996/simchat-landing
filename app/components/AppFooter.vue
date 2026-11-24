@@ -18,20 +18,14 @@ const year = new Date().getFullYear()
       <div class="flex items-center gap-1">
         <span class="sr-only">{{ t('footer.followUs') }}</span>
         <UButton
-          :to="business.instagram"
+          v-for="social in socials"
+          :key="social.label"
+          :to="social.href"
           target="_blank"
-          icon="i-simple-icons-instagram"
+          :icon="social.icon"
+          :aria-label="social.label"
           color="neutral"
           variant="ghost"
-          aria-label="Instagram"
-        />
-        <UButton
-          :to="business.facebook"
-          target="_blank"
-          icon="i-simple-icons-facebook"
-          color="neutral"
-          variant="ghost"
-          aria-label="Facebook"
         />
         <UButton
           :to="whatsappLink(t('whatsapp.general'))"

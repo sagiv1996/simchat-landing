@@ -38,6 +38,25 @@ const { t } = useI18n()
           <span dir="ltr" class="font-semibold">{{ business.phoneDisplay }}</span>
         </a>
       </div>
+
+      <div class="relative mt-10 border-t border-white/15 pt-8">
+        <p class="text-sm text-white/75">
+          {{ t('footer.followUs') }}
+        </p>
+        <div class="mt-4 flex justify-center gap-3">
+          <UButton
+            v-for="social in socials"
+            :key="social.label"
+            :to="social.href"
+            target="_blank"
+            :icon="social.icon"
+            :label="social.label"
+            color="neutral"
+            variant="outline"
+            class="rounded-full text-white ring-white/30 hover:bg-white/10"
+          />
+        </div>
+      </div>
     </div>
   </section>
 </template>

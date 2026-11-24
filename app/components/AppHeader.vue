@@ -26,6 +26,17 @@ const items = computed<NavigationMenuItem[]>(() =>
 
     <template #right>
       <UButton
+        v-for="social in socials"
+        :key="social.label"
+        :to="social.href"
+        target="_blank"
+        :icon="social.icon"
+        :aria-label="social.label"
+        color="neutral"
+        variant="ghost"
+        class="hidden lg:inline-flex"
+      />
+      <UButton
         :to="switchLocalePath(otherLocale)"
         :aria-label="t('nav.switchLanguageLabel')"
         color="neutral"
@@ -54,6 +65,19 @@ const items = computed<NavigationMenuItem[]>(() =>
         size="lg"
         class="mt-6"
       />
+      <div class="mt-4 flex gap-3">
+        <UButton
+          v-for="social in socials"
+          :key="social.label"
+          :to="social.href"
+          target="_blank"
+          :icon="social.icon"
+          :label="social.label"
+          color="neutral"
+          variant="outline"
+          class="flex-1 justify-center"
+        />
+      </div>
     </template>
   </UHeader>
 </template>
