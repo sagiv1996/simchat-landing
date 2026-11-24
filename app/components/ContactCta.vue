@@ -53,7 +53,7 @@ const { t } = useI18n()
             :label="social.label"
             color="neutral"
             variant="outline"
-            class="rounded-full text-white ring-white/30 hover:bg-white/10"
+            class="rounded-full bg-transparent text-white ring-white/40 hover:bg-white/10"
           />
         </div>
       </div>

@@ -25,9 +25,15 @@ useHead(() => ({
       :id="hanukkah.id"
       icon="i-lucide-sparkles"
       :title="t('hanukkah.banner')"
-      :actions="[{ label: t('hanukkah.bannerAction'), to: '#hanukkah', color: 'neutral', variant: 'solid', size: 'xs' }]"
+      :actions="[{ label: t('hanukkah.bannerAction'), to: '#hanukkah', color: 'neutral', variant: 'solid', size: 'xs', class: 'bg-amber-300 text-[#14213d] hover:bg-amber-200' }]"
       close
-      class="bg-[#14213d] text-white"
+      :ui="{
+        root: 'bg-[#14213d]',
+        container: 'h-auto min-h-12 py-2',
+        icon: 'text-amber-300',
+        title: 'text-white whitespace-normal',
+        close: 'text-white hover:bg-white/10 focus-visible:bg-white/10',
+      }"
     />
     <AppHeader />
     <main class="overflow-x-clip">
