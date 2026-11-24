@@ -24,7 +24,7 @@ onMounted(async () => {
       :src="src"
       :poster="poster"
       :aria-label="label"
-      class="aspect-[9/16] max-h-[70vh] w-full object-contain sm:aspect-video"
+      class="aspect-video w-full object-contain"
       controls
       muted
       playsinline

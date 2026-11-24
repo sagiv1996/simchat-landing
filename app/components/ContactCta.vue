@@ -3,7 +3,7 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <section id="contact" class="px-4 pb-20 sm:pb-28">
+  <section id="contact" class="px-4 pb-14 sm:pb-28">
     <div
       v-reveal
       class="relative mx-auto max-w-5xl overflow-hidden rounded-[2rem] bg-gradient-to-br from-ember-600 to-ember-900 px-6 py-14 text-center text-white shadow-2xl shadow-primary/30 sm:px-12 sm:py-20"

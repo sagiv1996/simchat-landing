@@ -103,7 +103,9 @@
       "workshopTable": "The workshop table with flowers, shells and stones to choose from",
       "happyGuest": "A participant holding the candle she made",
       "handsShells": "Decorating a candle with shells and flowers"
-    }
+    },
+    "showMore": "{count} more photos",
+    "showLess": "Show less"
   },
   "about": {
     "eyebrow": "Nice to meet you",

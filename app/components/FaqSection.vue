@@ -31,14 +31,19 @@ useHead(() => ({
 </script>
 
 <template>
-  <section id="faq" class="py-20 sm:py-28">
+  <section id="faq" class="py-14 sm:py-28">
     <UContainer class="max-w-3xl">
       <SectionHeading :eyebrow="t('faq.eyebrow')" :title="t('faq.title')" />
 
-      <div v-reveal="100" class="mt-12 rounded-3xl bg-elevated/40 px-6 ring-1 ring-default">
+      <div v-reveal="100" class="mt-10 rounded-3xl bg-elevated/40 p-2 ring-1 ring-default md:mt-12 md:p-3">
         <UAccordion
           :items="items"
-          :ui="{ trigger: 'py-5 text-base font-semibold text-highlighted', body: 'pb-5 text-muted text-base' }"
+          :ui="{
+            item: 'group border-default last:border-b-0',
+            trigger: 'rounded-2xl px-4 py-5 text-base font-semibold text-highlighted transition-colors hover:bg-elevated hover:text-primary data-[state=open]:text-primary',
+            trailingIcon: 'group-hover:text-primary',
+            body: 'px-4 pb-5 text-base text-muted',
+          }"
         />
       </div>
     </UContainer>

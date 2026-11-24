@@ -19,7 +19,7 @@ const points = [
         class="pointer-events-none absolute -top-32 start-10 size-80 rounded-full bg-amber-400/25 blur-3xl"
       />
 
-      <div class="relative p-8 sm:p-12">
+      <div class="relative p-6 sm:p-12">
         <UBadge
           :label="t('hanukkah.eyebrow')"
           icon="i-lucide-sparkles"
@@ -60,11 +60,11 @@ const points = [
         </div>
       </div>
 
-      <div class="relative min-h-72 lg:min-h-full">
+      <div class="relative h-48 sm:h-64 lg:h-auto lg:min-h-full">
         <NuxtImg
           src="/images/candles-collection.webp"
           :alt="t('gallery.items.candlesCollection')"
-          sizes="100vw lg:600px"
+          sizes="480px sm:768px lg:600px"
           class="absolute inset-0 size-full object-cover"
           loading="lazy"
         />

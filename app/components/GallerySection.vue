@@ -18,6 +18,9 @@ const items: GalleryItem[] = [
   { key: 'happyGuest', src: '/images/happy-guest.webp' },
 ]
 
+const MOBILE_PREVIEW_COUNT = 4
+const expanded = ref(false)
+
 const selected = ref<GalleryItem | null>(null)
 
 const open = computed({
@@ -29,7 +32,7 @@ const open = computed({
 </script>
 
 <template>
-  <section id="gallery" class="py-20 sm:py-28">
+  <section id="gallery" class="py-14 sm:py-28">
     <UContainer>
       <SectionHeading
         :eyebrow="t('gallery.eyebrow')"
@@ -37,20 +40,21 @@ const open = computed({
         :subtitle="t('gallery.subtitle')"
       />
 
-      <div class="mt-14 columns-2 gap-4 md:columns-3">
+      <div class="mt-10 columns-2 gap-3 md:mt-14 md:columns-3 md:gap-4">
         <button
           v-for="(item, index) in items"
           :key="item.key"
           v-reveal="(index % 3) * 100"
           type="button"
           :aria-label="`${t('gallery.open')}: ${t(`gallery.items.${item.key}`)}`"
-          class="group relative mb-4 block w-full overflow-hidden rounded-2xl ring-1 ring-default focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+          class="group relative mb-3 w-full overflow-hidden rounded-2xl ring-1 ring-default focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary md:mb-4 md:block"
+          :class="!expanded && index >= MOBILE_PREVIEW_COUNT ? 'hidden' : 'block'"
           @click="selected = item"
         >
           <NuxtImg
             :src="item.src"
             :alt="t(`gallery.items.${item.key}`)"
-            sizes="50vw md:33vw lg:400px"
+            sizes="200px md:300px lg:400px"
             class="w-full transition duration-700 group-hover:scale-105"
             loading="lazy"
           />
@@ -58,6 +62,16 @@ const open = computed({
             {{ t(`gallery.items.${item.key}`) }}
           </span>
         </button>
+      </div>
+
+      <div class="mt-4 flex justify-center md:hidden">
+        <UButton
+          color="neutral"
+          variant="outline"
+          :label="expanded ? t('gallery.showLess') : t('gallery.showMore', { count: items.length - MOBILE_PREVIEW_COUNT })"
+          :trailing-icon="expanded ? 'i-lucide-chevron-up' : 'i-lucide-chevron-down'"
+          @click="expanded = !expanded"
+        />
       </div>
     </UContainer>
 
@@ -72,7 +86,7 @@ const open = computed({
           v-if="selected"
           :src="selected.src"
           :alt="t(`gallery.items.${selected.key}`)"
-          sizes="100vw lg:768px"
+          sizes="480px sm:768px"
           class="max-h-[80vh] w-full object-contain"
         />
       </template>

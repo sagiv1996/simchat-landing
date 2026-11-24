@@ -22,22 +22,24 @@ const messageKey: Record<Service['key'], string> = {
 </script>
 
 <template>
-  <section id="services" class="py-20 sm:py-28">
+  <section id="services" class="py-14 sm:py-28">
     <UContainer>
       <SectionHeading :eyebrow="t('services.eyebrow')" :title="t('services.title')" />
 
-      <div class="mt-14 grid gap-6 md:grid-cols-3">
+      <div
+        v-reveal
+        class="no-scrollbar -mx-4 mt-10 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-4 sm:-mx-6 sm:px-6 md:mx-0 md:mt-14 md:grid md:grid-cols-3 md:gap-6 md:overflow-visible md:px-0 md:pb-0"
+      >
         <article
-          v-for="(service, index) in services"
+          v-for="service in services"
           :key="service.key"
-          v-reveal="index * 120"
-          class="group flex flex-col overflow-hidden rounded-3xl bg-elevated/50 ring-1 ring-default transition hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10"
+          class="group flex w-[82%] shrink-0 snap-center flex-col overflow-hidden rounded-3xl bg-elevated/50 ring-1 ring-default transition hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10 sm:w-[60%] md:w-auto"
         >
           <div class="relative aspect-[4/3] overflow-hidden">
             <NuxtImg
               :src="service.image"
               alt=""
-              sizes="100vw md:33vw"
+              sizes="340px md:400px"
               class="size-full object-cover transition duration-700 group-hover:scale-105"
               loading="lazy"
             />
