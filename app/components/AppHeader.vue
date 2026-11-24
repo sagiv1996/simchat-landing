@@ -2,6 +2,7 @@
 import type { NavigationMenuItem } from '@nuxt/ui'
 
 const { t, locale } = useI18n()
+const { business, whatsappLink } = useBusiness()
 
 const activeSection = useActiveSection()
 
@@ -30,7 +31,7 @@ const items = computed<NavigationMenuItem[]>(() =>
 
     <template #right>
       <UButton
-        v-for="social in socials"
+        v-for="social in business.socials"
         :key="social.label"
         :to="social.href"
         target="_blank"
@@ -72,7 +73,7 @@ const items = computed<NavigationMenuItem[]>(() =>
       />
       <div class="mt-4 flex gap-3">
         <UButton
-          v-for="social in socials"
+          v-for="social in business.socials"
           :key="social.label"
           :to="social.href"
           target="_blank"

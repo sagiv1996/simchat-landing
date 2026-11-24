@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { t, locale } = useI18n()
+const { business } = useBusiness()
 const { siteUrl } = useRuntimeConfig().public
 const ogImage = `${siteUrl}/og.jpg`
 const showHanukkah = isSeasonActive(hanukkah)
@@ -29,10 +30,10 @@ useHead({
       '@type': 'LocalBusiness',
       'name': business.name,
       'founder': business.owner,
-      'telephone': business.phoneE164,
+      'telephone': business.phone.international,
       'url': siteUrl,
       'image': ogImage,
-      'sameAs': [business.instagram, business.facebook],
+      'sameAs': business.socials.map(social => social.href),
     }),
   }],
 })

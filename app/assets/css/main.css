@@ -95,6 +95,21 @@ html[data-js] [data-reveal][data-revealed] {
   75% { opacity: 0.95; scale: 1.02; }
 }
 
+@keyframes caret-blink {
+  50% { opacity: 0; }
+}
+
+.typewriter-caret {
+  display: inline-block;
+  width: 3px;
+  height: 0.85em;
+  margin-inline-start: 0.12em;
+  vertical-align: -0.08em;
+  background: currentColor;
+  border-radius: 2px;
+  animation: caret-blink 1s steps(1) infinite;
+}
+
 .hero-in {
   animation: hero-in 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both;
   animation-delay: calc(var(--i, 0) * 120ms);
@@ -118,6 +133,7 @@ html[data-js] [data-reveal][data-revealed] {
   }
 
   .hero-in,
+  .typewriter-caret,
   .hero-zoom,
   .hero-flicker,
   .hero-flame {

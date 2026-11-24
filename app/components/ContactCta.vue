@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { t } = useI18n()
+const { business, phoneLink, whatsappLink } = useBusiness()
 </script>
 
 <template>
@@ -33,9 +34,9 @@ const { t } = useI18n()
           :label="t('cta.button')"
           class="bg-white text-ember-800 hover:bg-ember-50"
         />
-        <a :href="`tel:${business.phoneE164}`" class="text-white/85 underline-offset-4 hover:text-white hover:underline">
+        <a :href="phoneLink" class="text-white/85 underline-offset-4 hover:text-white hover:underline">
           {{ t('cta.call') }}
-          <span dir="ltr" class="font-semibold">{{ business.phoneDisplay }}</span>
+          <span dir="ltr" class="font-semibold">{{ business.phone.display }}</span>
         </a>
       </div>
 
@@ -45,7 +46,7 @@ const { t } = useI18n()
         </p>
         <div class="mt-4 flex justify-center gap-3">
           <UButton
-            v-for="social in socials"
+            v-for="social in business.socials"
             :key="social.label"
             :to="social.href"
             target="_blank"

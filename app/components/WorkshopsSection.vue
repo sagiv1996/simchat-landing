@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { t } = useI18n()
+const { whatsappLink } = useBusiness()
 
 const occasions = [
   { key: 'bachelorette', icon: 'i-lucide-heart' },

@@ -1,34 +1,35 @@
 <script setup lang="ts">
+import type { LightboxItem } from './GalleryLightbox.vue'
+
 const { t } = useI18n()
 
-interface GalleryItem {
-  key: string
-  src: string
-}
-
-const items: GalleryItem[] = [
+const photos = [
   { key: 'candleStarfish', src: '/images/candle-starfish.webp' },
-  { key: 'workshopGroup', src: '/images/workshop-group.webp' },
-  { key: 'candleRedFlowers', src: '/images/candle-red-flowers.webp' },
   { key: 'workshopGirls', src: '/images/workshop-girls.webp' },
+  { key: 'candleRedFlowers', src: '/images/candle-red-flowers.webp' },
+  { key: 'workshopGroup', src: '/images/workshop-group.webp' },
   { key: 'handsRose', src: '/images/hands-rose.webp' },
   { key: 'candlesCollection', src: '/images/candles-collection.webp' },
   { key: 'workshopTable', src: '/images/workshop-table.webp' },
   { key: 'handsShells', src: '/images/hands-shells.webp' },
   { key: 'happyGuest', src: '/images/happy-guest.webp' },
-]
+] as const
 
-const MOBILE_PREVIEW_COUNT = 4
-const expanded = ref(false)
+const DESKTOP_PREVIEW = 6
+const MOBILE_PREVIEW = 4
 
-const selected = ref<GalleryItem | null>(null)
+const items = computed<LightboxItem[]>(() =>
+  photos.map(photo => ({ src: photo.src, alt: t(`gallery.items.${photo.key}`) })),
+)
+const preview = computed(() => items.value.slice(0, DESKTOP_PREVIEW))
 
-const open = computed({
-  get: () => selected.value !== null,
-  set: (value: boolean) => {
-    if (!value) selected.value = null
-  },
-})
+const lightboxOpen = ref(false)
+const startIndex = ref(0)
+
+function openAt(index: number) {
+  startIndex.value = index
+  lightboxOpen.value = true
+}
 </script>
 
 <template>
@@ -40,56 +41,40 @@ const open = computed({
         :subtitle="t('gallery.subtitle')"
       />
 
-      <div class="mt-10 columns-2 gap-3 md:mt-14 md:columns-3 md:gap-4">
+      <div v-reveal class="mt-10 grid grid-cols-2 gap-3 md:mt-14 md:grid-cols-3 md:gap-4">
         <button
-          v-for="(item, index) in items"
-          :key="item.key"
-          v-reveal="(index % 3) * 100"
+          v-for="(item, index) in preview"
+          :key="item.src"
           type="button"
-          :aria-label="`${t('gallery.open')}: ${t(`gallery.items.${item.key}`)}`"
-          class="group relative mb-3 w-full overflow-hidden rounded-2xl ring-1 ring-default focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary md:mb-4 md:block"
-          :class="!expanded && index >= MOBILE_PREVIEW_COUNT ? 'hidden' : 'block'"
-          @click="selected = item"
+          :aria-label="`${t('gallery.open')}: ${item.alt}`"
+          class="group relative aspect-square overflow-hidden rounded-2xl ring-1 ring-default focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+          :class="{ 'max-md:hidden': index >= MOBILE_PREVIEW }"
+          @click="openAt(index)"
         >
           <NuxtImg
             :src="item.src"
-            :alt="t(`gallery.items.${item.key}`)"
+            :alt="item.alt"
             sizes="200px md:300px lg:400px"
-            class="w-full transition duration-700 group-hover:scale-105"
+            class="size-full object-cover transition duration-700 group-hover:scale-105"
             loading="lazy"
           />
           <span class="absolute inset-0 flex items-end bg-gradient-to-t from-black/60 via-transparent p-4 text-start text-sm text-white opacity-0 transition group-hover:opacity-100">
-            {{ t(`gallery.items.${item.key}`) }}
+            {{ item.alt }}
           </span>
         </button>
       </div>
 
-      <div class="mt-4 flex justify-center md:hidden">
+      <div class="mt-8 flex justify-center">
         <UButton
-          color="neutral"
-          variant="outline"
-          :label="expanded ? t('gallery.showLess') : t('gallery.showMore', { count: items.length - MOBILE_PREVIEW_COUNT })"
-          :trailing-icon="expanded ? 'i-lucide-chevron-up' : 'i-lucide-chevron-down'"
-          @click="expanded = !expanded"
+          size="lg"
+          variant="soft"
+          icon="i-lucide-images"
+          :label="t('gallery.viewAll', { count: items.length })"
+          @click="openAt(0)"
         />
       </div>
     </UContainer>
 
-    <UModal
-      v-model:open="open"
-      :title="selected ? t(`gallery.items.${selected.key}`) : ''"
-      :close="{ 'aria-label': t('gallery.close') }"
-      :ui="{ content: 'max-w-3xl', body: 'p-0 sm:p-0' }"
-    >
-      <template #body>
-        <NuxtImg
-          v-if="selected"
-          :src="selected.src"
-          :alt="t(`gallery.items.${selected.key}`)"
-          sizes="480px sm:768px"
-          class="max-h-[80vh] w-full object-contain"
-        />
-      </template>
-    </UModal>
+    <GalleryLightbox v-model:open="lightboxOpen" :items="items" :start-index="startIndex" />
   </section>
 </template>

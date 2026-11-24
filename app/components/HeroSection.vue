@@ -1,5 +1,11 @@
 <script setup lang="ts">
 const { t } = useI18n()
+const { whatsappLink } = useBusiness()
+
+const phrases = computed(() =>
+  (['one', 'two', 'three', 'four'] as const).map(key => t(`hero.rotating.${key}`)),
+)
+const typed = useTypewriter(phrases)
 
 const badges = [
   { key: 'travel', icon: 'i-lucide-car' },
@@ -45,7 +51,18 @@ const badges = [
           style="--i: 1"
         >
           {{ t('hero.title') }}
-          <span class="block text-amber-300 lg:text-primary">{{ t('hero.titleAccent') }}</span>
+          <span class="block text-amber-300 lg:text-primary">
+            <span class="sr-only">{{ phrases[0] }}</span>
+            <!-- Every phrase sits invisibly in the same grid cell, reserving room for the longest so nothing shifts. -->
+            <span aria-hidden="true" class="inline-grid">
+              <span
+                v-for="phrase in phrases"
+                :key="phrase"
+                class="invisible col-start-1 row-start-1"
+              >{{ phrase }}</span>
+              <span class="col-start-1 row-start-1">{{ typed }}<span class="typewriter-caret" /></span>
+            </span>
+          </span>
         </h1>
 
         <p class="hero-in mt-6 max-w-xl text-lg text-pretty text-white/85 lg:text-muted" style="--i: 2">

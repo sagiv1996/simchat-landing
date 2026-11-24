@@ -21,6 +21,9 @@
   },
   "devDependencies": {
     "@iconify-json/lucide": "^1.2.159",
-    "@iconify-json/simple-icons": "^1.2.104"
+    "@iconify-json/simple-icons": "^1.2.104",
+    "@types/node": "^26.6.6",
+    "typescript": "^6.0.3",
+    "vue-tsc": "^3.3.14"
   }
 }

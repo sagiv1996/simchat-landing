@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { t } = useI18n()
+const { whatsappLink } = useBusiness()
 
 const points = [
   { key: 'gifts', icon: 'i-lucide-gift' },

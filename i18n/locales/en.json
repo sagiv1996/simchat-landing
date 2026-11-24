@@ -25,7 +25,6 @@
   "hero": {
     "eyebrow": "A boutique studio for handmade candles",
     "title": "Candles that tell a story,",
-    "titleAccent": "workshops you'll remember",
     "subtitle": "Custom scented candles and hands-on creative workshops for all ages. We come to you with all the tools, materials and inspiration.",
     "ctaPrimary": "Book a workshop on WhatsApp",
     "ctaSecondary": "Custom candles",
@@ -34,7 +33,13 @@
       "ages": "For all ages",
       "handmade": "Handmade, quality materials"
     },
-    "imageAlt": "A coconut-shell candle decorated with starfish and blue stones"
+    "imageAlt": "A coconut-shell candle decorated with starfish and blue stones",
+    "rotating": {
+      "one": "workshops you'll remember",
+      "two": "gifts that touch the heart",
+      "three": "events that glow",
+      "four": "moments of calm"
+    }
   },
   "services": {
     "eyebrow": "What we do",
@@ -92,7 +97,6 @@
     "title": "From the studio and our workshops",
     "subtitle": "A little inspiration from candles made in our studio and workshops",
     "open": "Enlarge image",
-    "close": "Close",
     "items": {
       "candleStarfish": "Coconut candle with starfish and blue stones",
       "workshopGirls": "Participants designing candles at a workshop",
@@ -104,8 +108,7 @@
       "happyGuest": "A participant holding the candle she made",
       "handsShells": "Decorating a candle with shells and flowers"
     },
-    "showMore": "{count} more photos",
-    "showLess": "Show less"
+    "viewAll": "See all {count} photos"
   },
   "about": {
     "eyebrow": "Nice to meet you",

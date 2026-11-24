@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { t } = useI18n()
+const { business, phoneLink, whatsappLink } = useBusiness()
 const year = new Date().getFullYear()
 </script>
 
@@ -18,7 +19,7 @@ const year = new Date().getFullYear()
       <div class="flex items-center gap-1">
         <span class="sr-only">{{ t('footer.followUs') }}</span>
         <UButton
-          v-for="social in socials"
+          v-for="social in business.socials"
           :key="social.label"
           :to="social.href"
           target="_blank"
@@ -36,11 +37,11 @@ const year = new Date().getFullYear()
           aria-label="WhatsApp"
         />
         <UButton
-          :to="`tel:${business.phoneE164}`"
+          :to="phoneLink"
           icon="i-lucide-phone"
           color="neutral"
           variant="ghost"
-          :label="business.phoneDisplay"
+          :label="business.phone.display"
           dir="ltr"
         />
       </div>
