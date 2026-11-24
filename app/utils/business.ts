@@ -1,8 +1,8 @@
 export const business = {
   name: "Molly's Candle",
   owner: 'Simchat Dahan',
-  phoneDisplay: '052-292-2388',
-  phoneE164: '+972522922388',
+  phoneDisplay: '052-292-3855',
+  phoneE164: '+972522923855',
   instagram: 'https://www.instagram.com/mollyscandel/',
   facebook: 'https://www.facebook.com/share/14pJGd8bHLx/',
 } as const
