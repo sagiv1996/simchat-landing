@@ -49,6 +49,7 @@ const items = computed<NavigationMenuItem[]>(() =>
         variant="ghost"
         icon="i-lucide-languages"
         :label="t('nav.switchLanguage')"
+        @click="rememberLocale(otherLocale)"
       />
       <UColorModeButton :aria-label="t('theme.toggle')" />
       <UButton

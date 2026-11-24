@@ -1,3 +1,5 @@
+import { localeRedirectScript } from './app/utils/localePreference'
+
 const siteUrl = process.env.NUXT_PUBLIC_SITE_URL ?? 'https://simchat-landing.pages.dev'
 
 export default defineNuxtConfig({
@@ -21,7 +23,10 @@ export default defineNuxtConfig({
     head: {
       link: [{ rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
       meta: [{ name: 'theme-color', content: '#b45f2a' }],
-      script: [{ innerHTML: 'document.documentElement.setAttribute("data-js","")', tagPosition: 'head' }],
+      script: [
+        { innerHTML: localeRedirectScript, tagPosition: 'head' },
+        { innerHTML: 'document.documentElement.setAttribute("data-js","")', tagPosition: 'head' },
+      ],
     },
   },
 
