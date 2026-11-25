@@ -53,6 +53,7 @@ export default defineNuxtConfig({
   // Pinned so building on Cloudflare doesn't auto-select a server preset and the paid /cdn-cgi image resizer.
   nitro: {
     preset: 'static',
+    prerender: { routes: ['/robots.txt'] },
   },
 
   image: {

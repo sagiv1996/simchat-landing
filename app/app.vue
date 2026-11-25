@@ -6,7 +6,7 @@ const i18nHead = useLocaleHead()
 
 const uiLocales = { he, en, fr, es }
 const uiLocale = computed(() => uiLocales[locale.value as LocaleCode] ?? he)
-const showHanukkah = isSeasonActive(hanukkah)
+const showHanukkah = useSeason(hanukkah)
 
 useHead(() => ({
   htmlAttrs: {

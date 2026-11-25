@@ -3,7 +3,7 @@ const { t, locale } = useI18n()
 const { business } = useBusiness()
 const { siteUrl } = useRuntimeConfig().public
 const ogImage = `${siteUrl}/og.jpg`
-const showHanukkah = isSeasonActive(hanukkah)
+const showHanukkah = useSeason(hanukkah)
 
 useSectionTracking(trackedSections)
 
