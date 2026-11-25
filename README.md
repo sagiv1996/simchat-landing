@@ -16,7 +16,7 @@ npm run build      # static site in .output/public
 npm run preview    # serve the build locally
 ```
 
-Set `NUXT_PUBLIC_SITE_URL` to the live domain when building. It is used for canonical links, Open Graph images, the sitemap and `robots.txt`. It defaults to `https://simchat-landing.pages.dev`.
+Set `NUXT_PUBLIC_SITE_URL` to the live domain when building. It is used for canonical links, Open Graph images, the sitemap and `robots.txt`. It defaults to `https://simchat-landing.sagivb13.workers.dev`.
 
 ## Deploy
 

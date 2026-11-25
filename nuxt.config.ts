@@ -1,6 +1,6 @@
 import { DEFAULT_LOCALE, LOCALES, localeRedirectScript } from './app/utils/localePreference'
 
-const siteUrl = process.env.NUXT_PUBLIC_SITE_URL ?? 'https://simchat-landing.pages.dev'
+const siteUrl = process.env.NUXT_PUBLIC_SITE_URL ?? 'https://simchat-landing.sagivb13.workers.dev'
 
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
